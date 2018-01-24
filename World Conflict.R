@@ -13,3 +13,12 @@ names(mydata)
 #look at top 6 records
 head(mydata)
 tail(mydata)
+#load ggplot
+install.packages("ggplot2")
+library(ggplot2)
+help(package = ggplot2)
+#create graph of the data
+qplot(mydata$StartYear, mydata$TotalFatalities, mydata)
+ggplot(mydata[1], x = StartYear, y = TotalFatalities)
+
+
